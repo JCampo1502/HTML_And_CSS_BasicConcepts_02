@@ -1,4 +1,4 @@
-![Logo](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/Images/AgileInovaLogo.png?raw=true)
+![Logo](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/AgileInovaLogo.png?raw=true)
 
 # Ejercicio 2 | Restaurante el Horno.
 Vamos a crear una página web que tenga la información correspondiente a una receta de una bandeja paisa.
