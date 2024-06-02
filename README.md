@@ -1,11 +1,9 @@
 ![Logo](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/AgileInovaLogo.png?raw=true)
 
 # Ejercicio 2 | Restaurante el Horno.
-Vamos a crear una página web que tenga la información correspondiente a una receta de una bandeja paisa.
-
-## Requerimientos
 Crear un menú de comidas típicas colombianas para el restaurante el Horno.
 
+## Requerimientos
 - [x] La página debe contener un título principal, tres párrafos con el contenido del restaurante, dos párrafos con anuncios secundarios, y un texto de derechos de autor - copyright - (© 2021).
 
 - [x] Integrar el siguiente código a su página del restaurante el Horno y dar estilo, en donde se podrá   implementar los estilos heredados de la etiqueta `<aside>`
