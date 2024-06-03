@@ -1,6 +1,6 @@
 ![Logo](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/AgileInovaLogo.png?raw=true)
 
-# Ejercicio 2 | Restaurante el Horno.
+# Módulo HTML - CSS básico Ejercicio 1 | Restaurante el Horno.
 Crear un menú de comidas típicas colombianas para el restaurante el Horno.
 
 ## Requerimientos
