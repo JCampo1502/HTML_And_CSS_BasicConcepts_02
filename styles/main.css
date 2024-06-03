@@ -480,18 +480,27 @@ body main footer:nth-child(3) div ul{
     body main section:first-child article:first-child h1 span{                                    
         font-size:3rem;
         left: 2rem;
-        top: -9rem;
+        top: -10rem;
         -webkit-transform: rotate(-20deg);
             -ms-transform: rotate(-20deg);
                 transform: rotate(-20deg);        
         padding: 4.5rem 1rem;        
     }
     
-    body main section:first-child article:first-child h1 em{    
-        position: absolute;
+    body main section:first-child article:first-child h1 em{            
         font-size:5rem;
         top:  -4rem;
-        right: 7rem;
-        text-decoration:underline;
+        right: 12rem;        
+    }
+}
+
+@media (min-width: 1200px) 
+{
+    
+    body main section:first-child article:first-child h1 em{            
+        font-size:7rem;
+        top:  -5.5rem;
+        right: 12rem;
+        
     }
 }
