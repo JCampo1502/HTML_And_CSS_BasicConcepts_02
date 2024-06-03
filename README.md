@@ -34,3 +34,15 @@ Partiendo del ejercicio 2 vamos a hacer uso de la herencia, y utilizando un solo
 
 **Nota**: Tenemos que trabajar con la primera etiqueta del contenido de HTML que es `<body>` y utilizar el selector de etiqueta para que todas sus hijas anidadas hereden de ella. Los colores y las fuentes pueden cambiar a gusto del estudiante.
 
+## Conclucion
+La página incluye todos los elementos requeridos, como el título principal, párrafos descriptivos, anuncios secundarios entre otros 📝. El principal logro fue implementar CSS Grid 🎨. También se empleó la herencia de CSS en los estilos del ``font-size`, `line-height`, y `color` (estos últimos en la mayor parte del documento).
+
+### Resultados 📈
+#### Versión de escritorio 🖥️
+![desktop](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/desktop.png?raw=true)
+#### Versión de teléfono y tablet 📱
+![movile1](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/movile1.png?raw=true)
+![movile2](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/movile2.png?raw=true)
+![movile3](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/movile3.png?raw=true)
+![movile4](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/movile4.png?raw=true)
+![tablet](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/Results/tablet.png?raw=true)
