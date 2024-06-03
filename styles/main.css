@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root{
     --font-size:18px;
     --font-family:Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +34,8 @@ body > *{
     font-family:inherit;
     line-height:inherit;
     color:inherit;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 main h1{
@@ -41,7 +49,8 @@ body{
     font-family: var(--font-family);
     line-height: var(--line-height);
     color: var(--secundary);
-    box-sizing: border-box;   
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;   
     min-height: 98vh;     
     padding: .2rem;
     margin-top: 5rem;
@@ -57,11 +66,13 @@ body::before{
     width: 100%;
     position: absolute;
     background-image: url(../images/background.svg);
-    filter: invert(24%) sepia(68%) saturate(1389%) hue-rotate(245deg) brightness(87%) contrast(97%);;
+    -webkit-filter: invert(24%) sepia(68%) saturate(1389%) hue-rotate(245deg) brightness(87%) contrast(97%);
+            filter: invert(24%) sepia(68%) saturate(1389%) hue-rotate(245deg) brightness(87%) contrast(97%);;
     background-clip: content-box;    
     background-repeat: repeat;
     padding: var(--space-md);    
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;    
+            box-sizing: border-box;
     z-index: -1000;
 }
 
@@ -74,7 +85,12 @@ body main{
     padding: var(--space-sm);
     position: relative;
     background:#f0ffdc;
-    box-shadow: 
+    -webkit-box-shadow: 
+        inset 0px 0px 0px 6px var(--white),
+        inset 0px 0px 0px 12px var(--silver),
+        inset 0px 0px 0px 14px var(--white),
+        inset 0px 0px 0px 18px var(--silver);
+            box-shadow: 
         inset 0px 0px 0px 6px var(--white),
         inset 0px 0px 0px 12px var(--silver),
         inset 0px 0px 0px 14px var(--white),
@@ -106,7 +122,12 @@ body main::after{
     left: calc(50% - 100px);
     top: -76px;
     border-radius: 30% 15% 20% 4%;
-    box-shadow: 
+    -webkit-box-shadow: 
+        8px 6px 1px -2px #000000,
+        -12px 8px 2px -1px var(--second-complementary) inset,
+        12px -8px 1px -1px var(--fisrt-complementary) inset   
+    ;
+            box-shadow: 
         8px 6px 1px -2px #000000,
         -12px 8px 2px -1px var(--second-complementary) inset,
         12px -8px 1px -1px var(--fisrt-complementary) inset   
@@ -116,8 +137,13 @@ body main::after{
 /* TITULO */
 
 body main section:first-child article:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: .2rem .5rem;    
 }
 
@@ -136,13 +162,16 @@ body main section:first-child article:first-child h1 span{
     font-size:2.8rem;
     left: -.2rem;
     top: -8rem;
-    box-shadow: -0px -0px 1px 14px #893300;
+    -webkit-box-shadow: -0px -0px 1px 14px #893300;
+            box-shadow: -0px -0px 1px 14px #893300;
     padding: 2rem 1rem;
     border-radius: 50%;        
 }
 
 body main section:first-child article:first-child h1 em{    
     position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     font-size:3.6rem;
     top:  .5rem;
@@ -173,11 +202,18 @@ body main section:first-child aside h3{
 }
 
 body main section:first-child aside ul{
+    display:  -webkit-box;
+    display:  -ms-flexbox;
     display:  flex;    
-    flex-direction: column;        
+    -webkit-box-orient: vertical;    
+    -webkit-box-direction: normal;    
+        -ms-flex-direction: column;    
+            flex-direction: column;        
     text-align: center;
     list-style: none;
-    align-items: baseline;    
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;    
     padding: .2rem;
     margin-top: 2rem;
     border-bottom: 2px solid #000;
@@ -192,10 +228,13 @@ body main section:first-child aside ul li{
 
 /* CALATOLO */
 body main section:nth-child(2) article:first-child{
+    display: -ms-grid;
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 20%);  
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;  
     grid-auto-columns: 0;
     grid-auto-rows: 0;
     min-height: 20vh;    
@@ -204,7 +243,6 @@ body main section:nth-child(2) article:first-child{
     width: 95%;        
     max-height: var(--large-sm);
 }
-
 
 
 body main section:nth-child(2) article p{
@@ -223,9 +261,15 @@ body main section:nth-child(2) article p img{
 
 
 body main section:nth-child(2) article p strong{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
     position: absolute;
     background: rgba(255, 255, 255, .2);    
     top: 0px;
@@ -243,7 +287,10 @@ body main section:nth-child(2) article p strong span{
     padding: 1rem;
     border-radius: .8rem;
     background: var(--white);
-    box-shadow: 
+    -webkit-box-shadow: 
+    0px 0px 2px 30px #efefef89,
+    0px 0px 8px 2px #000000ab;
+            box-shadow: 
     0px 0px 2px 30px #efefef89,
     0px 0px 8px 2px #000000ab;
 }
@@ -256,9 +303,16 @@ body main section:nth-child(2) article p:hover strong{
 /* FOOTER */
 body main footer:nth-child(3){        
     padding-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top: 4px solid #000;
 }
 
@@ -287,13 +341,17 @@ body main footer:nth-child(3) div ul{
     
 
     body main section:nth-child(2) article:first-child{     
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 25%);          
-    }
+        -ms-grid-columns: 1fr 1fr;     
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }    
+    
 }
 
 @media (min-width: 738px) 
 {    
+
     body::before{
         padding: var(--space-md);
     } 
@@ -302,13 +360,17 @@ body main footer:nth-child(3) div ul{
     } 
     /* TITULO */
     body main section:first-child article:first-child {
+        display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
         padding: 2rem 2rem;    
     }
 
     body main section:first-child article:first-child h1{
+        -ms-grid-column-span: 3;
         grid-column: span 3;
         height: 5.5rem;
     }
@@ -317,7 +379,9 @@ body main footer:nth-child(3) div ul{
         font-size:3rem;
         left: .5rem;
         top: -9rem;
-        transform: rotate(-20deg);        
+        -webkit-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+                transform: rotate(-20deg);        
         padding: 3.8rem 1rem;        
     }
     
@@ -334,41 +398,54 @@ body main footer:nth-child(3) div ul{
     }
     
     body main section:first-child aside{    
+        -ms-grid-column-span: 3;    
         grid-column: span 3;
     }
     
     body main section:first-child aside ul{
+        display:  -ms-grid;
         display:  grid;
+        -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
         grid-template-columns: repeat(3, 1fr);
+        -ms-grid-rows: auto;
         grid-template-rows: auto;
         gap: 2rem;
     }
-    
-    
+
     /* CALATOLO */
     body main section:nth-child(2) article:first-child{                
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 25%);
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: 25% 25% 25% 25%;
+        grid-template-rows:25% 25% 25% 25%;
     }
+
     
     body main section:nth-child(2) article p:nth-child(4){    
+        -ms-grid-row-span: 2;    
         grid-row: span 2;
     }
     body main section:nth-child(2) article p:nth-child(1){    
+        -ms-grid-column-span: 2;    
         grid-column: span 2;
+        -ms-grid-row-span: 2;
         grid-row: span 2;
     }
     
     body main section:nth-child(2) article p:nth-child(7){        
+        -ms-grid-row-span: 2;        
         grid-row: span 2;
     }
     
     body main section:nth-child(2) article p:nth-child(8){        
+        -ms-grid-row-span: 2;        
         grid-row: span 2;
     }
     
     body main section:nth-child(2) article p:nth-child(3){    
+        -ms-grid-column-span: 2;    
         grid-column: span 2;
+        -ms-grid-row-span: 2;
         grid-row: span 2;
     }  
     
@@ -377,8 +454,13 @@ body main footer:nth-child(3) div ul{
         margin: 2rem 2rem;
         margin-top: 4rem;
         padding-top: 1rem;
-        flex-direction: row;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     
     body main footer:nth-child(3) div{
@@ -399,7 +481,9 @@ body main footer:nth-child(3) div ul{
         font-size:3rem;
         left: 2rem;
         top: -9rem;
-        transform: rotate(-20deg);        
+        -webkit-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+                transform: rotate(-20deg);        
         padding: 4.5rem 1rem;        
     }
     
