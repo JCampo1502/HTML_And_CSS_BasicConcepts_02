@@ -1,6 +1,6 @@
 ![Logo](https://github.com/JCampo1502/HTML_And_CSS_BasicConcepts_02/blob/main/images/AgileInovaLogo.png?raw=true)
 
-# Ejercicio 2 | Restaurante el Horno.
+# Módulo HTML - CSS básico Ejercicio 1 | Restaurante el Horno.
 Crear un menú de comidas típicas colombianas para el restaurante el Horno.
 
 ## Requerimientos
@@ -34,7 +34,7 @@ Partiendo del ejercicio 2 vamos a hacer uso de la herencia, y utilizando un solo
 
 **Nota**: Tenemos que trabajar con la primera etiqueta del contenido de HTML que es `<body>` y utilizar el selector de etiqueta para que todas sus hijas anidadas hereden de ella. Los colores y las fuentes pueden cambiar a gusto del estudiante.
 
-## Conclucion
+## Conclución
 La página incluye todos los elementos requeridos, como el título principal, párrafos descriptivos, anuncios secundarios entre otros 📝. El principal logro fue implementar CSS Grid 🎨. También se empleó la herencia de CSS en los estilos del ``font-size`, `line-height`, y `color` (estos últimos en la mayor parte del documento).
 
 ### Resultados 📈
